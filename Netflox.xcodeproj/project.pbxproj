@@ -35,6 +35,7 @@
 		CED770EE2A5878BC00A00951 /* UpcomingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED770ED2A5878BC00A00951 /* UpcomingViewController.swift */; };
 		CED770F02A5878D500A00951 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED770EF2A5878D500A00951 /* SearchViewController.swift */; };
 		CED770F22A5878F000A00951 /* DownloadsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED770F12A5878F000A00951 /* DownloadsViewController.swift */; };
+		CED9076D2A5E8D9F0048F832 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED9076C2A5E8D9F0048F832 /* Config.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,6 +86,8 @@
 		CED770ED2A5878BC00A00951 /* UpcomingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpcomingViewController.swift; sourceTree = "<group>"; };
 		CED770EF2A5878D500A00951 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		CED770F12A5878F000A00951 /* DownloadsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadsViewController.swift; sourceTree = "<group>"; };
+		CED907692A5E8A6E0048F832 /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
+		CED9076C2A5E8D9F0048F832 /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -206,6 +209,7 @@
 		CED770B92A58703B00A00951 /* Netflox */ = {
 			isa = PBXGroup;
 			children = (
+				CED907682A5E8A3C0048F832 /* Configuration */,
 				CE4FAE2D2A5966870058A694 /* Managers */,
 				CE4FAE2B2A5966700058A694 /* Resources */,
 				CE4FAE292A5966440058A694 /* Models */,
@@ -244,6 +248,15 @@
 				CEA09A582A5D3E99004770E7 /* Core */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		CED907682A5E8A3C0048F832 /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				CED907692A5E8A6E0048F832 /* Config.xcconfig */,
+				CED9076C2A5E8D9F0048F832 /* Config.swift */,
+			);
+			path = Configuration;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -398,6 +411,7 @@
 				CE76EFE52A5C706800F00C6F /* Extensions.swift in Sources */,
 				CEA09A5B2A5D5CC9004770E7 /* YouTubeSearchResponse.swift in Sources */,
 				CED770BD2A58703B00A00951 /* SceneDelegate.swift in Sources */,
+				CED9076D2A5E8D9F0048F832 /* Config.swift in Sources */,
 				CED770EE2A5878BC00A00951 /* UpcomingViewController.swift in Sources */,
 				CEA09A5D2A5D5F58004770E7 /* TitlePreviewViewController.swift in Sources */,
 				CEA09A5F2A5D624E004770E7 /* TitlepreviewViewModel.swift in Sources */,
@@ -453,6 +467,7 @@
 /* Begin XCBuildConfiguration section */
 		CED770DF2A58703C00A00951 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CED907692A5E8A6E0048F832 /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
